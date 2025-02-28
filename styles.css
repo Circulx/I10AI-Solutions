@@ -11,7 +11,7 @@ body {
 
 /* Hero Section with Background Image */
 .hero-section {
-    background-image: url('img/hero-bg.jpg');
+    background-image: url('img/home.bg.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,7 +32,7 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgb(11, 12, 12);
     font-weight: 500;
     margin: 0 10px;
     transition: all 0.3s ease;
@@ -40,7 +40,7 @@ body {
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #ffffff;
+    color: #dfae0b;
 }
 
 /* Dropdown Menu Styling */
@@ -67,8 +67,8 @@ body {
 
 /* Request a Quote Button */
 .btn-quote {
-    background-color: #25D366; /* WhatsApp green color */
-    color: white;
+    background-color: #06e858; /* WhatsApp green color */
+    color: rgb(19, 20, 20);
     font-weight: 600;
     padding: 8px 20px;
     border-radius: 50px;
@@ -330,7 +330,9 @@ body {
 }
 
 .about-content .lead {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-style: italic;
     line-height: 1.8;
     color: #2c3e50;
 }
@@ -490,7 +492,8 @@ body {
 
 /* Footer Section */
 .footer-section {
-    background: linear-gradient(135deg, #05d783b2 0%, #dd90da 50%, #4dcf10 100%);
+    background-color: #0c0d0d;
+ 
     color: white;
     position: relative;
 }

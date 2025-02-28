@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateNavbar() {
         if (window.scrollY > 50) {
             navbar.style.padding = '10px 0';
-            navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+            navbar.style.backgroundColor =  'rgb(255,255,255)';
         } else {
-            navbar.style.padding = '20px 0';
-            navbar.style.backgroundColor = 'transparent';
+            navbar.style.padding = '10px 0';
+            navbar.style.backgroundColor = 'rgb(255,255,255)';
         }
     }
     
