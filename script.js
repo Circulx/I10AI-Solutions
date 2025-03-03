@@ -77,25 +77,37 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Form submission handling
-    const contactForm = document.querySelector('.contact-form');
+    // Contact Form Handling
+    const contactForm = document.getElementById('contactForm');
     if (contactForm) {
-        // Contact Form Handling
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
             // Get form data
             const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
             
-            // Here you would typically send the data to your server
-            console.log('Form submitted:', data);
-            
-            // Show success message
-            alert('Thank you for your message! We will get back to you soon.');
-            
-            // Reset form
-            this.reset();
+            // Send form data using fetch
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    // Show success message
+                    alert('Message sent successfully!');
+                    // Reset form
+                    contactForm.reset();
+                } else {
+                    // Show error message
+                    alert('Oops! There was a problem sending your message. Please try again later.');
+                }
+            }).catch(error => {
+                // Show error message
+                alert('Oops! There was a problem sending your message. Please try again later.');
+                console.error('Error:', error);
+            });
         });
     }
     
@@ -166,6 +178,34 @@ document.addEventListener('DOMContentLoaded', function() {
         // Initialize testimonials
         showTestimonial(0);
     }
+
+    // Initialize Swiper slider for advertisements
+    var Swiper = window.Swiper || {}; // Declare Swiper as a global variable or ensure it's loaded
+    const adSlider = new Swiper('.advertisement-slider', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        },
+    });
 });
 
 // Reload animations when scrolling back into view
@@ -223,7 +263,7 @@ function initMap() {
 // WhatsApp Integration
 function openWhatsApp() {
     // Replace with your actual WhatsApp number
-    const phoneNumber = '+911234567890';
+    const phoneNumber = '+917491922495';
     const message = 'Hi, I would like to know more about i10AI Solutions.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
