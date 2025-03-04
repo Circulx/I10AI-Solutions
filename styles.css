@@ -83,7 +83,7 @@ html, body {
     }
 
     .navbar-nav .nav-link {
-        padding: 10px 15px;
+        padding: 10px 20px;
     }
 
     .btn-quote {
@@ -983,6 +983,7 @@ html, body {
     .navbar-nav .nav-link {
         padding: 10px 15px;
         margin: 0;
+        
     }
     
     .dropdown-menu {

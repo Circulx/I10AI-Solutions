@@ -15,30 +15,72 @@
     <link rel="stylesheet" href="digital-consulting.css">
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="/index.html">
+                <img src="../../img/logo.png" alt="Logo" height="30">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html#about">ABOUT US</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#services" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            SERVICES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="../web-services/web-services.html">WEB SERVICES</a></li>
+                            <li><a class="dropdown-item" href="../b2b-platforms/b2b-platforms.html">B2B SOLUTIONS</a></li>
+                            <li><a class="dropdown-item" href="../customized-development/customized-development.html">CUSTOMIZED DEVELOPMENT</a></li>
+                            <li><a class="dropdown-item" href="digital-consulting.html">DIGITAL CONSULTING</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html#offerings">OFFERINGS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html#blogs">BLOGS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="https://wa.me/+917491922495" class="btn btn-quote">
+                        <i class="fab fa-whatsapp me-2"></i>Enquire
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <!-- Hero Section with Video Background -->
     <div class="hero-section-services">
         <div class="video-background">
             <video autoplay muted loop id="myVideo">
-                <source src="../../assets/videos/consulting-background.mp4" type="video/mp4">
+                <source src="../../img/digitalConsulting.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <div class="overlay"></div>
         </div>
-        
-        <!-- Navbar (Same as index.html) -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <!-- Navbar content from index.html -->
-        </nav>
     
         <!-- Hero Content -->
         <div class="hero-content">
             <div class="container">
                 <div class="col-md-8" data-aos="fade-up">
-                    <h1 class="display-3 fw-bold text-white">Digital Consulting Services</h1>
-                    <p class="lead text-white mb-4">Strategic guidance for your digital transformation journey with expertise from Energy, IT, and cross-industry experience.</p>
+                    <h1 class="display-3 fw-bold text-white"style="margin-left: 60PX;"></h1>
+                    <p class="lead text-white mb-4"style="margin-left: 65PX;"></p>
                     <div class="mt-4">
-                        <a href="#consulting" class="btn btn-primary btn-lg me-3">Our Services</a>
-                        <a href="#contact" class="btn btn-outline-light btn-lg">Contact Us</a>
+                        
+                       <!-- <a href="#contact" class="btn btn-outline-light btn-lg"style="margin-left: 60PX;"></a> --> 
                     </div>
                 </div>
             </div>
@@ -98,12 +140,130 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
-        <!-- Contact section content from index.html -->
+        <div class="contact-bg-overlay"></div>
+        <div class="container py-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-title-underline"></div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Contact Form -->
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="contact-form-card">
+                        <form id="contactForm" action="https://formsubmit.co/ranjeshroy97099@gmail.com" method="POST" class="contact-form">
+                            <input type="hidden" name="_subject" value="New Message from I10AI">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://your-website-url.com/thank-you.html">
+                            <input type="hidden" name="_format" value="json">
+                            <input type="hidden" name="_from_name" value="I10AI SOLUTIONS">
+                            <input type="hidden" name="_sender" value="I10AI SOLUTIONS">
+                            <input type="hidden" name="_template" value="box">
+                            <div class="mb-3">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" name="phone" class="form-control" placeholder="Mobile No." required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" name="email" class="form-control" placeholder="Email Id" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
+                                <a href="https://wa.me/+917491922495" class="btn btn-success" target="_blank">
+                                    <i class="fab fa-whatsapp me-2"></i>WHATSAPP US
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="contact-info-card">
+                        <div class="contact-info mb-4">
+                            <h4>Contact Information</h4>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>KDEM, HSR, Bangalore, IN</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <p>+91 8082622781</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <p>support@i10ai.com</p>
+                            </div>
+                            <div class="social-links">
+                                <h5>Get Social:</h5>
+                                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.linkedin.com/company/103731132/admin/dashboard/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer-section">
-        <!-- Footer content from index.html -->
+        <div class="container py-5">
+            <div class="row g-4">
+                <!-- Logo and Social Media -->
+                <div class="col-lg-3" data-aos="fade-up" data-aos-duration="800">
+                    <div class="footer-logo">
+                        <a class="navbar-brand" href="/index.html">
+                            <img src="../../img/logo2.png" alt="Logo" height="30">
+                        </a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="100"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="200"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/103731132/admin/dashboard/" class="social-icon" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="300"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links 1 -->
+                <div class="col-lg-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <ul class="footer-links">
+                        <li><a href="../../index.html#home">Home</a></li>
+                        <li><a href="../../index.html#product">Product</a></li>
+                        <li><a href="../../index.html#articles">Articles</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Quick Links 2 -->
+                <div class="col-lg-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <ul class="footer-links">
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="col-lg-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                    <h5 class="footer-heading">Office</h5>
+                    <p class="footer-contact">KDEM, HSR BANGALORE</p>
+                    <p class="footer-contact">+91 8082622781</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="copyright-bar">
+            <div class="container">
+                <p class="mb-0 text-center">© Copyright 2025 I10AI. All rights reserved</p>
+            </div>
+        </div>
     </footer>
 
     <!-- Bootstrap JS Bundle with Popper -->
