@@ -50,7 +50,7 @@
                             <a class="nav-link" href="#offerings">OFFERINGS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#advertisement">ADVERTISEMENT</a>
+                            <a class="nav-link" href="#blogs">BLOGS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">CONTACT</a>
@@ -145,7 +145,7 @@
             <div class="row g-4">
                 <!-- B2B Platforms -->
                 <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
-                    <a href="b2b-platforms.html" class="service-card-link">
+                    <a href="/i10aiwebsite-i10AI/services/b2b.html" class="service-card-link">
                         <div class="service-card">
                             <div class="service-icon">
                                 <i class="fas fa-cog"></i>
@@ -158,7 +158,7 @@
                 
                 <!-- Web Services -->
                 <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
-                    <a href="web-services.html" class="service-card-link">
+                    <a href="services/web-services/web-services.html" class="service-card-link">
                         <div class="service-card">
                             <div class="service-icon">
                                 <i class="fas fa-leaf"></i>
@@ -272,133 +272,171 @@
         </div>
     </section>
 
-<!-- Advertisement Slider Section -->
-<section id="advertisement" class="advertisement-section">
+<!-- I10 Blogs Section -->
+<section id="blogs" class="blogs-section">
     <div class="container py-5">
         <div class="text-center mb-5" data-aos="fade-up">
-            <h2 class="section-title">Featured Ads</h2>
+            <h2 class="section-title">I10 Blogs</h2>
             <div class="section-title-underline"></div>
         </div>
-        <div class="advertisement-slider" data-aos="fade-up" data-aos-delay="200">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="ad-card">
-                        <img src="img/ad1.jpg" alt="Advertisement 1" class="ad-image">
-                        <div class="ad-content">
-                            <h3>Special Offer</h3>
-                            <p>Get 20% off on all B2B solutions this month!</p>
-                            <a href="#contact" class="btn btn-primary">Learn More</a>
+        
+        <div class="blogs-slider-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="swiper blogs-slider">
+                <div class="swiper-wrapper">
+                    <!-- Blog 1 -->
+                    <div class="swiper-slide">
+                        <div class="blog-card" data-aos="zoom-in" data-aos-duration="800">
+                            <div class="blog-image">
+                                <img src="img/AI.jpg" alt="AI in Manufacturing" class="img-fluid">
+                            </div>
+                            <div class="blog-content">
+                                <h3 class="blog-title">AI in Manufacturing: The Future is Now</h3>
+                                <div class="blog-text">
+                                    <p class="blog-preview">Artificial Intelligence is revolutionizing the manufacturing industry by enabling predictive maintenance, quality control, and process optimization. Smart factories are leveraging AI to reduce downtime, improve product quality, and increase overall efficiency.</p>
+                                    <div class="blog-full-content collapse" id="blogContent1">
+                                        <p>The integration of AI in manufacturing processes has led to unprecedented levels of automation and intelligence. Machine learning algorithms can now predict equipment failures before they occur, allowing maintenance teams to address issues proactively rather than reactively.</p>
+                                        <p>Computer vision systems inspect products with greater accuracy than human inspectors, identifying defects that might otherwise go unnoticed. This leads to higher quality products and fewer customer returns.</p>
+                                        <p>Furthermore, AI-powered process optimization continuously analyzes production data to identify bottlenecks and inefficiencies, suggesting improvements that can lead to significant cost savings and productivity gains.</p>
+                                    </div>
+                                    <button class="btn btn-link text-primary p-0 blog-read-more" type="button" data-bs-toggle="collapse" data-bs-target="#blogContent1" aria-expanded="false" aria-controls="blogContent1">
+                                        <span class="read-more">Read more >></span>
+                                        <span class="read-less">Read less <<</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Blog 2 -->
+                    <div class="swiper-slide">
+                        <div class="blog-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                            <div class="blog-image">
+                                <img src="img/Digital Trans.jpg" alt="Digital Transformation" class="img-fluid">
+                            </div>
+                            <div class="blog-content">
+                                <h3 class="blog-title">Digital Transformation: A Strategic Imperative</h3>
+                                <div class="blog-text">
+                                    <p class="blog-preview">Digital transformation is no longer optional for businesses looking to remain competitive. Organizations must embrace new technologies and reimagine their business models to meet evolving customer expectations and market demands.</p>
+                                    <div class="blog-full-content collapse" id="blogContent2">
+                                        <p>The pace of technological change continues to accelerate, forcing companies to adapt or risk obsolescence. Successful digital transformation requires more than just implementing new technologies; it demands a fundamental shift in organizational culture and mindset.</p>
+                                        <p>Leaders must champion innovation and create an environment where experimentation is encouraged and failure is viewed as a learning opportunity. Employees at all levels need to develop digital literacy and embrace continuous learning.</p>
+                                        <p>Companies that successfully navigate digital transformation can expect improved operational efficiency, enhanced customer experiences, and new revenue streams through innovative products and services.</p>
+                                    </div>
+                                    <button class="btn btn-link text-primary p-0 blog-read-more" type="button" data-bs-toggle="collapse" data-bs-target="#blogContent2" aria-expanded="false" aria-controls="blogContent2">
+                                        <span class="read-more">Read more >></span>
+                                        <span class="read-less">Read less <<</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Blog 3 -->
+                    <div class="swiper-slide">
+                        <div class="blog-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+                            <div class="blog-image">
+                                <img src="img/IOT.jpg" alt="IoT Solutions" class="img-fluid">
+                            </div>
+                            <div class="blog-content">
+                                <h3 class="blog-title">IoT Solutions for Smart Factories</h3>
+                                <div class="blog-text">
+                                    <p class="blog-preview">Internet of Things (IoT) technology is transforming traditional factories into smart, connected environments. By deploying sensors throughout the production floor, manufacturers can collect real-time data on equipment performance, environmental conditions, and more.</p>
+                                    <div class="blog-full-content collapse" id="blogContent3">
+                                        <p>The data collected by IoT sensors provides unprecedented visibility into manufacturing operations. This visibility enables better decision-making, as managers can access real-time dashboards showing key performance indicators and alerts for potential issues.</p>
+                                        <p>IoT-enabled equipment can communicate with other machines and systems, creating a connected ecosystem that optimizes production flow and reduces waste. For example, if one machine detects a quality issue, it can automatically signal upstream equipment to adjust parameters.</p>
+                                        <p>Beyond the factory floor, IoT extends to the supply chain, enabling track-and-trace capabilities that improve logistics efficiency and provide customers with real-time updates on order status.</p>
+                                    </div>
+                                    <button class="btn btn-link text-primary p-0 blog-read-more" type="button" data-bs-toggle="collapse" data-bs-target="#blogContent3" aria-expanded="false" aria-controls="blogContent3">
+                                        <span class="read-more">Read more >></span>
+                                        <span class="read-less">Read less <<</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Blog 4 -->
+                    <div class="swiper-slide">
+                        <div class="blog-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="600">
+                            <div class="blog-image">
+                                <img src="img/B2B.jpg" alt="B2B E-commerce" class="img-fluid">
+                            </div>
+                            <div class="blog-content">
+                                <h3 class="blog-title">The Evolution of B2B E-commerce Platforms</h3>
+                                <div class="blog-text">
+                                    <p class="blog-preview">B2B e-commerce is undergoing a significant transformation, with platforms evolving to offer more personalized, consumer-like experiences. Modern B2B buyers expect the same convenience and user-friendly interfaces they encounter in B2C transactions.</p>
+                                    <div class="blog-full-content collapse" id="blogContent4">
+                                        <p>Today's B2B e-commerce platforms leverage AI and machine learning to deliver personalized product recommendations, dynamic pricing, and customized catalogs based on each buyer's profile and purchase history.</p>
+                                        <p>Integration capabilities have become a critical feature, allowing B2B platforms to connect seamlessly with ERP systems, CRM software, and other business applications. This integration eliminates data silos and provides a unified view of customers and operations.</p>
+                                        <p>Mobile optimization is no longer optional, as more B2B buyers research and place orders using smartphones and tablets. Leading platforms offer responsive designs and dedicated mobile apps to accommodate these users.</p>
+                                    </div>
+                                    <button class="btn btn-link text-primary p-0 blog-read-more" type="button" data-bs-toggle="collapse" data-bs-target="#blogContent4" aria-expanded="false" aria-controls="blogContent4">
+                                        <span class="read-more">Read more >></span>
+                                        <span class="read-less">Read less <<</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Blog 5 -->
+                    <div class="swiper-slide">
+                        <div class="blog-card" data-aos="zoom-in" data-aos-duration="800">
+                            <div class="blog-image">
+                                <img src="img/CYBER.jpg" alt="Cybersecurity" class="img-fluid">
+                            </div>
+                            <div class="blog-content">
+                                <h3 class="blog-title">Cybersecurity in the Age of Industry 4.0</h3>
+                                <div class="blog-text">
+                                    <p class="blog-preview">As industrial systems become more connected, cybersecurity has emerged as a critical concern. The convergence of IT and OT (Operational Technology) networks creates new vulnerabilities that malicious actors can exploit, potentially leading to production disruptions or safety incidents.</p>
+                                    <div class="blog-full-content collapse" id="blogContent5">
+                                        <p>Traditional IT security measures are often insufficient for protecting industrial control systems and IoT devices. Organizations need to implement specialized security frameworks that address the unique challenges of OT environments.</p>
+                                        <p>A defense-in-depth approach is essential, incorporating multiple layers of protection including network segmentation, access controls, encryption, and continuous monitoring for anomalous behavior.</p>
+                                        <p>Employee awareness and training are equally important, as human error remains one of the most common entry points for cyberattacks. Regular security drills and simulated phishing exercises can help staff recognize and respond appropriately to potential threats.</p>
+                                    </div>
+                                    <button class="btn btn-link text-primary p-0 blog-read-more" type="button" data-bs-toggle="collapse" data-bs-target="#blogContent5" aria-expanded="false" aria-controls="blogContent5">
+                                        <span class="read-more">Read more >></span>
+                                        <span class="read-less">Read less <<</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Blog 6 -->
+                    <div class="swiper-slide">
+                        <div class="blog-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                            <div class="blog-image">
+                                <img src="img/Sustanaible.jpg" alt="Sustainable Manufacturing" class="img-fluid">
+                            </div>
+                            <div class="blog-content">
+                                <h3 class="blog-title">Sustainable Manufacturing: Technology as an Enabler</h3>
+                                <div class="blog-text">
+                                    <p class="blog-preview">Sustainability has become a strategic priority for manufacturers worldwide. Advanced technologies are playing a crucial role in helping companies reduce their environmental footprint while maintaining profitability and competitiveness.</p>
+                                    <div class="blog-full-content collapse" id="blogContent6">
+                                        <p>Digital twins and simulation tools allow manufacturers to optimize processes virtually before implementing changes in the physical world, reducing waste and energy consumption during product development and production ramp-up.</p>
+                                        <p>AI-powered energy management systems continuously monitor and adjust equipment settings to minimize power usage without compromising performance. These systems can identify energy-intensive processes and recommend efficiency improvements.</p>
+                                        <p>Blockchain technology is enabling greater supply chain transparency, allowing companies to verify the sustainability credentials of their suppliers and provide consumers with detailed information about product origins and environmental impact.</p>
+                                    </div>
+                                    <button class="btn btn-link text-primary p-0 blog-read-more" type="button" data-bs-toggle="collapse" data-bs-target="#blogContent6" aria-expanded="false" aria-controls="blogContent6">
+                                        <span class="read-more">Read more >></span>
+                                        <span class="read-less">Read less <<</span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="ad-card">
-                        <img src="img/ad2.jpg" alt="Advertisement 2" class="ad-image">
-                        <div class="ad-content">
-                            <h3>New Product Launch</h3>
-                            <p>Introducing our latest AI-powered analytics tool</p>
-                            <a href="#contact" class="btn btn-primary">Discover Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="ad-card">
-                        <img src="img/ad3.jpg" alt="Advertisement 3" class="ad-image">
-                        <div class="ad-content">
-                            <h3>Free Consultation</h3>
-                            <p>Book a free consultation with our experts today!</p>
-                            <a href="#contact" class="btn btn-primary">Book Now</a>
-                        </div>
-                    </div>
-                </div>
+                
+                <!-- Slider Navigation -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
         </div>
     </div>
 </section>
 
-
-
-
-<!-- Testimonials Section 
-<section id="testimonials" class="testimonials-section">
-    <div class="testimonials-overlay"></div>
-    <div class="container py-5">
-        <div class="text-center mb-5" data-aos="fade-up">
-            <h2 class="section-title">Testimonials</h2>
-            <p class="section-subtitle">Recommendation & Accolades!</p>
-        </div>
-
-        <div class="row testimonials-slider" data-aos="fade-up" data-aos-delay="200">
-           
-            <div class="col-md-4 mb-4">
-                <div class="testimonial-card" data-aos="flip-left" data-aos-duration="1000">
-                    <div class="testimonial-content">
-                        <div class="client-logo">
-                            <img src="img/TTI_Logo.jpg">
-                        </div>
-                        <div class="quote-icon">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <p class="testimonial-text">We need a powerful digital footprint aligned to latest technologies to get our business a futuristic outlook</p>
-                        <div class="client-info">
-                            <h5>Think Tank of INDIA</h5>
-                            <p>Transforming Business Digitally</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-          
-            <div class="col-md-4 mb-4">
-                <div class="testimonial-card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
-                    <div class="testimonial-content">
-                        <div class="client-logo">
-                            <img src="img/TTI_Logo.jpg" alt="Tech Innovators" class="img-fluid">
-                        </div>
-                        <div class="quote-icon">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <p class="testimonial-text">i10AI's AI-powered solutions have revolutionized our manufacturing process, increasing efficiency by 40%.</p>
-                        <div class="client-info">
-                            <h5>Tech Innovators</h5>
-                            <p>Manufacturing Excellence</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            
-            <div class="col-md-4 mb-4">
-                <div class="testimonial-card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
-                    <div class="testimonial-content">
-                        <div class="client-logo">
-                            <img src="img/TTI_Logo.jpg" alt="Global Solutions" class="img-fluid">
-                        </div>
-                        <div class="quote-icon">
-                            <i class="fas fa-quote-left"></i>
-                        </div>
-                        <p class="testimonial-text">The B2B platform developed by i10AI has transformed our supply chain management completely.</p>
-                        <div class="client-info">
-                            <h5>Global Solutions</h5>
-                            <p>Digital Innovation Leader</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section> -->
-
-
-
-
-
-
-    
 <section id="contact" class="contact-section">
     <div class="contact-bg-overlay"></div>
     <div class="container py-5">
@@ -412,9 +450,15 @@
             <div class="col-lg-6" data-aos="fade-right">
                 <div class="contact-form-card">
                     <form id="contactForm" action="https://formsubmit.co/ranjeshroy97099@gmail.com" method="POST" class="contact-form">
-                        <input type="hidden" name="_subject" value="New contact form submission">
+                        <input type="hidden" name="_subject" value="New Message from I10AI">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_next" value="https://your-website-url.com/thank-you.html">
+                        <!-- Add this line to enable AJAX submissions -->
+                        <input type="hidden" name="_format" value="json">
+                        <!-- Set the company name as the sender -->
+                        <input type="hidden" name="_from_name" value="I10AI SOLUTIONS">
+                        <input type="hidden" name="_sender" value="I10AI SOLUTIONS">
+                        <input type="hidden" name="_template" value="box">
                         <div class="mb-3">
                             <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                         </div>
@@ -546,3 +590,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+

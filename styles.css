@@ -773,59 +773,204 @@ html, body {
     margin-top: 30px;
 }
 
-/* Advertisement Slider Styles */
-/* Advertisement Slider Styles */
-.advertisement-section {
+/* Blogs Section Styles */
+.blogs-section {
     background: linear-gradient(135deg, #f6f9fc 0%, #e9f1f9 100%);
     padding: 80px 0;
     position: relative;
     overflow: hidden;
 }
 
-.ad-card {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+.blogs-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('path-to-dots-pattern.png') repeat;
+    opacity: 0.1;
 }
 
-.ad-card:hover {
+.blogs-slider-container {
+    position: relative;
+    padding: 20px 0;
+}
+
+.blog-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.blog-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
-.ad-image {
-    width: 100%;
+.blog-image {
     height: 200px;
+    overflow: hidden;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    transition: all 0.5s ease;
 }
 
-.ad-content {
-    padding: 20px;
-    text-align: center;
+.blog-card:hover .blog-image img {
+    transform: scale(1.1);
 }
 
-.ad-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+.blog-content {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 15px;
     color: #333;
+    transition: all 0.3s ease;
 }
 
-.ad-content p {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
+.blog-card:hover .blog-title {
     color: #0d6efd;
 }
 
-.swiper-pagination-bullet-active {
+.blog-text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-preview {
+    color: #666;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.blog-full-content {
+    color: #666;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+.blog-full-content p {
+    margin-bottom: 15px;
+}
+
+.blog-read-more {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.blog-read-more .read-more,
+.blog-read-more .read-less {
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.blog-read-more .read-less {
+    display: none;
+}
+
+.blog-read-more[aria-expanded="true"] .read-more {
+    display: none;
+}
+
+.blog-read-more[aria-expanded="true"] .read-less {
+    display: inline;
+}
+
+/* Swiper Slider Customization for Blogs */
+.blogs-slider .swiper-button-next,
+.blogs-slider .swiper-button-prev {
+    color: #0d6efd;
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.blogs-slider .swiper-button-next:after,
+.blogs-slider .swiper-button-prev:after {
+    font-size: 18px;
+}
+
+.blogs-slider .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+}
+
+.blogs-slider .swiper-pagination-bullet-active {
     background: #0d6efd;
 }
+
+/* Responsive Styles for Blogs */
+@media (max-width: 991.98px) {
+    .blog-card {
+        height: 580px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .blog-card {
+        height: auto;
+        max-height: 600px;
+    }
+    
+    .blog-image {
+        height: 180px;
+    }
+    
+    .blog-title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .blog-card {
+        margin: 5px;
+    }
+    
+    .blog-content {
+        padding: 20px;
+    }
+    
+    .blog-title {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    
+    .blogs-slider .swiper-button-next,
+    .blogs-slider .swiper-button-prev {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .blogs-slider .swiper-button-next:after,
+    .blogs-slider .swiper-button-prev:after {
+        font-size: 16px;
+    }
+}
+
 /* Responsive Styles */
 @media (max-width: 991.98px) {
     .navbar-nav {
@@ -956,3 +1101,4 @@ html, body {
         font-size: 1.1rem;
     }
 }
+
